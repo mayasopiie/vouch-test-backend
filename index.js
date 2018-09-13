@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('./app');
 var debug = require('debug')('app:server');
 var http = require('http');
 
@@ -25,7 +25,9 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+server.listen(port, () => {
+  console.log('Server is listening on port 3000')
+});
 server.on('error', onError);
 server.on('listening', onListening);
 
