@@ -1,0 +1,9 @@
+{
+  "name": "vouch-test-backend",
+  "version": "1.0.0",
+  "description": "Back-end side for Vouch test project",
+  "main": "index.js",
+  "repository": "git@github.com:mayasopiie/vouch-test-backend.git",
+  "author": "Maya Sopiah Lubis <mayasopie275@gmail.com>",
+  "license": "MIT"
+}
