@@ -2,7 +2,8 @@ const mongoose = require('mongoose')
 const uniqueValidator = require('mongoose-unique-validator')
 const Schema = mongoose.Schema
 
-mongoose.connect('mongodb://root:six29992@ds155292.mlab.com:55292/vouch_ticketing')
+// mongoose.connect('mongodb://root:six29992@ds155292.mlab.com:55292/vouch_ticketing')
+mongoose.connect('mongodb://localhost:27017/vouch_ticketing')
 
 const TicketSchema = new Schema({
     passenger_name: {
