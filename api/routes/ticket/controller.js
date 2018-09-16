@@ -66,7 +66,9 @@ const controller = {
                     })
                 }
                 else {
-                    res.status(200).send(tickets)
+                    res.status(200).send({
+                        tickets
+                    })
                 }
             })
             .catch(error => {
